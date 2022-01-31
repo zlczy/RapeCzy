@@ -181,7 +181,7 @@
     w.gameTime = function() {
         _gameTimeNum--;
         if (_gameTimeNum <= 0) {
-            GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
+            GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;雷普时间到！';
             gameOver();
             GameLayerBG.className += ' flash';
             createjs.Sound.play("end");
