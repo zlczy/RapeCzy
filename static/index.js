@@ -127,7 +127,7 @@
         _gameScore = 0;
         _gameOver = false;
         _gameStart = false;
-        _gameTimeNum = 20;
+        _gameTimeNum = 25;
         GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
         countBlockSize();
         refreshGameLayer(GameLayer[0]);
@@ -349,7 +349,7 @@
         }
         SubmitResults();
         if (score <= 49) return '太蔡了';
-        if (score <= 99) return '太蓝了';
+        if (score <= 99) return '又蔡又蓝';
         if (score <= 149) return '你是一个一个一个小狗逼';
         if (score <= 199) return 'Czy都撅烂了罢（恼';
         return '压力马斯内';
