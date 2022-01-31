@@ -127,7 +127,7 @@
         _gameScore = 0;
         _gameOver = false;
         _gameStart = false;
-        _gameTimeNum = 25;
+        _gameTimeNum = 20;
         GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
         countBlockSize();
         refreshGameLayer(GameLayer[0]);
@@ -348,10 +348,13 @@
             return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
         }
         SubmitResults();
-        if (score <= 49) return '太蔡了';
-        if (score <= 99) return '又蔡又蓝';
-        if (score <= 149) return '你是一个一个一个小狗逼';
-        if (score <= 199) return 'Czy都撅烂了罢（恼';
+        
+        if (score <= 44) return '太蔡了';
+        if (score <= 46) return '已经在撅czy了';
+        if (score <= 81) return '蔡啊';
+        if (score <= 114) return '又蔡又蓝';
+        if (score <= 149) return 'czy都撅坏了罢（半恼';
+        if (score <= 199) return 'czy都撅烂了罢（恼';
         return '压力马斯内';
     }
 
