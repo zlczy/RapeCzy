@@ -4,7 +4,7 @@
 <div align="center">
 
 # RapeCzy
-**新概念Home游戏**
+**新概念Nonke游戏**
 </div>
 
 ## 简介
